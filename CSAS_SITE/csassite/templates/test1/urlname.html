@@ -1,0 +1,16 @@
+url name
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>url name</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+    <ul>
+        {% for url in url_name %}
+            <li>{{ url.urlname }}</li>
+        {% endfor %}
+    </ul>
+    </div>
+</div>
+{% endblock %}
