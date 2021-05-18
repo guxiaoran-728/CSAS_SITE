@@ -1,0 +1,54 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <button type="button"  onclick="javascript:location.reload()">刷新</button>
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <style rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+
+            background-color: rgb(22,32,45);
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="right_start" style="text-align: center">
+    <h4 style="color: rgb(255,255,255)">文件名:vue.json</h4>
+     <div class="container" style="margin-left: 30px">
+        <div class="row">
+            <h4 class="col-md-6" style="color: rgb(0,101,178)">漏洞名称</h4>
+            <h4 class="col-md-6" style="color: rgb(0,101,178)">漏洞路径</h4>
+
+        </div>
+
+    </div>
+        {% for msg1 in data %}
+     <div class="container">
+         <div class="row" style="margin-left: 20px">
+             <div class="title">
+            <span class="col-md-6" style="color: rgb(0,101,178);margin-top: 20px">{{msg1.name}}</span>
+            <span class="col-md-6" style="color: rgb(0,101,178);margin-top: 20px">{{msg1.link}}</span>
+
+
+            </div>
+
+        </div>
+
+     </div>
+    {% endfor %}
+</div>
+    </body>
+<script src="{% static 'jquery-2.2.1.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+</html>
