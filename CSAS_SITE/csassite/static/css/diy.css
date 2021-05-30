@@ -1,0 +1,43 @@
+div.diybutton
+{
+    margin-right:20px;
+    float : left;
+}
+
+#scan-content
+{
+    background-image: url("../img/5.jpg");
+}
+
+#scan-content2
+{
+    background-image: url("../img/7.jpg");
+}
+#myModal1
+{
+    background-image: url("../img/login-background.jpg");
+    background-size:100% 100%;
+}
+#myModal2
+{
+    background-image: url("../img/login-background.jpg");
+    background-size:100% 100%;
+}
+#myModal2-content
+{
+    background-color:rgba(0,0,0,0);
+    background-image: url("../img/7.jpg");
+    border-color: white;
+}
+#myModal1-content
+{
+    background-color:rgba(0,0,0,0);
+    background-image: url("../img/7.jpg");
+    border-color: white;
+}
+#checkbox1
+{
+    background-color:rgba(0,0,0,0);
+    border: 1px solid white;
+}
+  
