@@ -125,7 +125,12 @@ demo = {
     
 
     
-    initDashboardPageCharts: function() {
+    initDashboardPageCharts1: function(n1 , n2 , n3) {
+        
+        sum = n1 + n2 + n3;
+        p1 = (n1 * 100) / sum ;
+        p2 = (n2 * 100) / sum;
+        p3 = (n3 * 100) / sum;
 
         var dataPreferences = {
             series: [
@@ -147,29 +152,107 @@ demo = {
         Chartist.Pie('#chartPreferences1', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences1', {
-            labels: ['53%', '36%', '11%'],
-            series: [53, 36, 11]
+            labels: [n1.toString(), n2.toString(), n3.toString()],
+            series: [p1, p2, p3]
         });
+
+
+    },
+    initDashboardPageCharts2: function(n1 , n2 , n3) {
+
+        sum = n1 + n2 + n3;
+        p1 = (n1 * 100) / sum ;
+        p2 = (n2 * 100) / sum;
+        p3 = (n3 * 100) / sum;
+
+        var dataPreferences = {
+            series: [
+                [25, 30, 20, 25]
+            ]
+        };
+
+        var optionsPreferences = {
+            donut: true,
+            donutWidth: 40,
+            startAngle: 0,
+            total: 100,
+            showLabel: false,
+            axisX: {
+                showGrid: false
+            }
+        };
+
         Chartist.Pie('#chartPreferences2', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences2', {
-            labels: [,,'80%',, '20%'],
-            series: [0,0,80,0,20]
+            labels: [n1.toString(), n2.toString(), n3.toString()],
+            series: [p1, p2, p3]
         });
+
+
+    },
+    initDashboardPageCharts3: function(n1 , n2 , n3) {
+
+        sum = n1 + n2 + n3;
+        p1 = (n1 * 100) / sum ;
+        p2 = (n2 * 100) / sum;
+        p3 = (n3 * 100) / sum;
+
+        var dataPreferences = {
+            series: [
+                [25, 30, 20, 25]
+            ]
+        };
+
+        var optionsPreferences = {
+            donut: true,
+            donutWidth: 40,
+            startAngle: 0,
+            total: 100,
+            showLabel: false,
+            axisX: {
+                showGrid: false
+            }
+        };
 
         Chartist.Pie('#chartPreferences3', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences3', {
-            labels: ['64%', '36%'],
-            series: [64, 36]
+            labels: [n1.toString(), n2.toString(), n3.toString()],
+            series: [p1, p2, p3]
         });
+
+    },
+    initDashboardPageCharts4: function(n1 , n2 , n3) {
+
+        sum = n1 + n2 + n3;
+        p1 = (n1 * 100) / sum ;
+        p2 = (n2 * 100) / sum;
+        p3 = (n3 * 100) / sum;
+
+        var dataPreferences = {
+            series: [
+                [25, 30, 20, 25]
+            ]
+        };
+
+        var optionsPreferences = {
+            donut: true,
+            donutWidth: 40,
+            startAngle: 0,
+            total: 100,
+            showLabel: false,
+            axisX: {
+                showGrid: false
+            }
+        };
+
         Chartist.Pie('#chartPreferences4', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences4', {
-            labels: [,,'80%',, '20%'],
-            series: [0,0,80,0,20]
+            labels: [n1.toString(), n2.toString(), n3.toString()],
+            series: [p1, p2, p3]
         });
-
 
     },
 
