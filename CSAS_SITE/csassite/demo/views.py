@@ -13,7 +13,7 @@ class vulnerab(object):
         self.url = ''
         self.vuln_id = ''
         self.cvecode = ''
-def store_vulner(filename = "vuln.json"):
+def store_vulner(filename = "vulner.json"):
     allvulners = []
     vuln_count=0
     with open(filename) as f:
@@ -28,7 +28,7 @@ def store_vulner(filename = "vuln.json"):
             vuln_count = vuln_count+1
     return allvulners
 
-awvs_vulns = store_vulner("static/vuln.json")
+
 class Main(View):
     def get(self, request):
         for awvs_vuln in awvs_vulns:
