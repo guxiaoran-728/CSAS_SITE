@@ -191,12 +191,11 @@ demo = {
 
 
     },
-    initDashboardPageCharts3: function(n1 , n2 , n3) {
+    initDashboardPageCharts3: function(n1 , n2 ) {
 
-        sum = n1 + n2 + n3;
+        sum = n1 + n2 ;
         p1 = (n1 * 100) / sum ;
         p2 = (n2 * 100) / sum;
-        p3 = (n3 * 100) / sum;
 
         var dataPreferences = {
             series: [
@@ -218,17 +217,16 @@ demo = {
         Chartist.Pie('#chartPreferences3', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences3', {
-            labels: [n1.toString(), n2.toString(), n3.toString()],
-            series: [p1, p2, p3]
+            labels: [n1.toString(), n2.toString()],
+            series: [p1, p2]
         });
 
     },
-    initDashboardPageCharts4: function(n1 , n2 , n3) {
+    initDashboardPageCharts4: function(n1 , n2 ) {
 
-        sum = n1 + n2 + n3;
+        sum = n1 + n2;
         p1 = (n1 * 100) / sum ;
         p2 = (n2 * 100) / sum;
-        p3 = (n3 * 100) / sum;
 
         var dataPreferences = {
             series: [
@@ -250,8 +248,8 @@ demo = {
         Chartist.Pie('#chartPreferences4', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences4', {
-            labels: [n1.toString(), n2.toString(), n3.toString()],
-            series: [p1, p2, p3]
+            labels: ['','',n1.toString(),'', n2.toString()],
+            series: [0,0,p1,0,p2,]
         });
 
     },
